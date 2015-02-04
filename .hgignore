@@ -1,0 +1,62 @@
+#============================#
+#  Project-Specific Ignores  #
+#============================#
+
+#=====================#
+#  Mercurial Ignores  #
+#=====================#
+
+\.orig$
+\.resolve$
+\.rej$
+
+#===============#
+#  AMX Ignores  #
+#===============#
+
+\.src$
+\.tkn$
+\.tko$
+
+#====================#
+#  Crestron Ignores  #
+#====================#
+
+SPlsWork/
+\.sm2$				# SIMPL Windows backup project file.
+\.(asv|ASV)$		# Crestron autosave file.
+
+#================#
+#  Ruby Ignores  #
+#================#
+
+\.yardoc/
+
+#===================#
+#  AutoCAD Ignores  #
+#===================#
+
+plot\.log$
+
+#====================#
+#  Stardraw Ignores  #
+#====================#
+
+\.s99$
+
+#===============#
+#  IDE Ignores  #
+#===============#
+
+~$
+\.swp$
+\.sublime-workspace
+\.sublime-project
+
+#=======================#
+#  File System Ignores  #
+#=======================#
+
+\.zip$
+\.bak$
+\.DS_Store
