@@ -1,0 +1,32 @@
+
+oop_projector:
+
+  variables:
+    dps: { type: dev }
+    name: { type: char, width: 255, define_reader: true }
+    power_state:
+      type: integer
+      define_reader: true # Automatically define a reader function.
+      states: ['off', 'on', warming, cooling]
+    input:
+      type: class
+      define_reader: true
+      variables:
+        number: { type: integer }
+        name: { type: char, width: 64 }
+      states:
+        hdmi:      { number: 0, name: HDMI }
+        vga:       { number: 1, name: VGA }
+        composite: { number: 2, name: Composite }
+        svideo:    { number: 3, name: SVideo }
+
+  functions:
+    new:
+      args:
+        dps: { type: dev }
+        name: { type: char, width: -1 }
+    power_on:
+    power_off:
+    switch_input:
+      args:
+        input: { type: input }
