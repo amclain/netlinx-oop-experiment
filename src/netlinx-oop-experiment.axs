@@ -21,6 +21,8 @@ DEFINE_CONSTANT
 
 #include 'amx-lib-log';
 
+#include 'rpc_interface';
+
 (***********************************************************)
 (*                 STARTUP CODE GOES BELOW                 *)
 (***********************************************************)

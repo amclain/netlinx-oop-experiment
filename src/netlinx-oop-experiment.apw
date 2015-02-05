@@ -136,6 +136,18 @@
 <UserName></UserName>
 <Password></Password>
 <Comments></Comments>
+<File CompileType="Netlinx" Type="Include"><Identifier>amx-lib-log</Identifier>
+<FilePathName>include\amx-lib-log\amx-lib-log.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>projector_class</Identifier>
+<FilePathName>include\projector_class.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="Include"><Identifier>rpc_interface</Identifier>
+<FilePathName>include\rpc_interface.axi</FilePathName>
+<Comments></Comments>
+</File>
 <File CompileType="Netlinx" Type="MasterSrc"><Identifier>netlinx-oop-experiment</Identifier>
 <FilePathName>netlinx-oop-experiment.axs</FilePathName>
 <Comments></Comments>
