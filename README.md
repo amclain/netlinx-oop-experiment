@@ -3,10 +3,17 @@
 This is an experiment in designing encapsulated, reusable objects in the NetLinx
 programming language.
 
+The concept of simulating objects in a procedural language is by no means new,
+and this example borrows a lot from C design patterns. However, although the
+NetLinx syntax shares many traits with C, program execution is far less related.
+This experiment is an attempt to discover and document ways of designing and
+using objects in NetLinx in a way that is compatible with
+[model oriented programming](http://download.imatix.com/mop/introduction.html).
+
 ## Example Code
 
 Instantiating and controlling two projectors:
-```c
+```text
 oop_projector_t proj_1;
 oop_projector_t proj_2;
 
