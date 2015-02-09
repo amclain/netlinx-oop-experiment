@@ -103,10 +103,20 @@ define_function oop_projector_switch_input(oop_projector_t self, oop_projector_i
         ' set to input: ', self.input.name");
 }
 
+define_function oop_projector_string_event(oop_projector_t self, char data[])
+{
+    print(LOG_LEVEL_INFO, "self.name, ' received: ', data");
+}
+
 (***********************************************************)
 (*                 STARTUP CODE GOES BELOW                 *)
 (***********************************************************)
 DEFINE_START
+
+(***********************************************************)
+(*                   THE EVENTS GO BELOW                   *)
+(***********************************************************)
+DEFINE_EVENT
 
 (***********************************************************)
 (*                     END OF PROGRAM                      *)
