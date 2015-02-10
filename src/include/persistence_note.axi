@@ -32,3 +32,37 @@ define_function oop_projector_power_on(oop_projector_t v, oop_projector_memo_t p
 {
     do_stuff();
 }
+
+
+// -----------------------------------------------------------------
+// Alternative
+// -----------------------------------------------------------------
+
+// Global auto-generated memo struct.
+struct memo_t
+{
+    integer proj_1_power_state
+    integer proj_1_input_number
+    integer proj_2_power_state
+    integer proj_2_input_number
+}
+
+persistent memo_t memo
+
+// Run on a timeline.
+define_function memoize()
+{
+    memo.proj_1_power_state  = proj_1.power_state
+    memo.proj_1_input_number = proj_1.input.number
+    memo.proj_2_power_state  = proj_2.power_state
+    memo.proj_2_input_number = proj_2.input.number
+}
+
+// Put in DEFINE_START
+define_function unmemoize()
+{
+    proj_1.power_state  = memo.proj_1_power_state
+    proj_1.input.number = memo.proj_1_input_number
+    proj_2.power_state  = memo.proj_2_power_state
+    proj_2.input.number = memo.proj_2_input_number
+}
